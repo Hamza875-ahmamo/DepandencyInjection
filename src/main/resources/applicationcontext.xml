@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="idao" class="net.hamza.dao.DaoImpl"/>
+    <bean id="metier" class="net.hamza.metier.MetierImpl">
+        <property name="idao" ref="idao"/>
+    </bean>
+
+</beans>
